@@ -7,21 +7,21 @@ using System.Threading.Tasks;
 
 namespace AutoBet.Service.DieuKienService
 {
-    public interface IDieuKien
+    public interface IConditionService
     {
         // GET
-        List<DieuKien> DanhSachDieuKien();
+        List<Condition> GetListCondtion();
 
         // GET/:id
-        DieuKien DieuKienDetail(int ID);
+        Condition GetConditionDetail(int ID);
 
         // ADD
-        void ThemDieuKien(DieuKien dieuKien);
+        void AddCondition(Condition dieuKien);
 
         // UPDATE
-        void SuaDieuKien(DieuKien dieuKien);
+        void UpdateCondition(Condition dieuKien);
 
         // DELETE
-        void XoaDieuKien(int ID);
+        void RemoveCondition(int ID);
     }
 }

@@ -64,8 +64,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DieuKienService\DieuKienService.cs" />
-    <Compile Include="DieuKienService\IDieuKien.cs" />
+    <Compile Include="ConfigurationService\ConfigurationService.cs" />
+    <Compile Include="ConfigurationService\IConfigurationService.cs" />
+    <Compile Include="DieuKienService\ConditionService.cs" />
+    <Compile Include="DieuKienService\IConditionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -31,6 +31,7 @@ namespace AutoBet.Application
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formAutoBet));
             this.tbMenu = new System.Windows.Forms.TabControl();
             this.tPTongQuat = new System.Windows.Forms.TabPage();
@@ -43,57 +44,53 @@ namespace AutoBet.Application
             this.label10 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tbSession = new System.Windows.Forms.TextBox();
-            this.tbNgungKhiThuaTuWin = new System.Windows.Forms.TextBox();
             this.tbNgungKhiThua = new System.Windows.Forms.TextBox();
             this.txNgungKhiThang = new System.Windows.Forms.TextBox();
-            this.tbSoVanToiDa = new System.Windows.Forms.TextBox();
             this.tbCuocToiThieu = new System.Windows.Forms.TextBox();
             this.cbDieuKien = new System.Windows.Forms.ComboBox();
             this.cbBan = new System.Windows.Forms.ComboBox();
             this.cbNhaCungCap = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tPThietLap = new System.Windows.Forms.TabPage();
-            this.btnGhiHinh = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.btnSetPosition = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
+            this.tbFolderPath = new System.Windows.Forms.TextBox();
+            this.btnConfigurationCheck = new System.Windows.Forms.Button();
+            this.cbChipType = new System.Windows.Forms.ComboBox();
+            this.btnConfigurationSearch = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
+            this.pbCapture = new System.Windows.Forms.PictureBox();
+            this.btnConfigurationRecord = new System.Windows.Forms.Button();
+            this.tbTableName = new System.Windows.Forms.TextBox();
+            this.cbProvider = new System.Windows.Forms.ComboBox();
+            this.btnConfigurationRemove = new System.Windows.Forms.Button();
+            this.btnConfigurationSave = new System.Windows.Forms.Button();
+            this.btnConfigurationUpdate = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgChipData = new System.Windows.Forms.DataGridView();
             this.tPDieuKien = new System.Windows.Forms.TabPage();
-            this.btnXoaDK = new System.Windows.Forms.Button();
-            this.btnLuuDK = new System.Windows.Forms.Button();
-            this.btnSuaDieuKien = new System.Windows.Forms.Button();
-            this.dgvDieuKien = new System.Windows.Forms.DataGridView();
-            this.tbNoiDung = new System.Windows.Forms.TextBox();
+            this.btnConditionDelete = new System.Windows.Forms.Button();
+            this.btnConditionSave = new System.Windows.Forms.Button();
+            this.btnConditionUpdate = new System.Windows.Forms.Button();
+            this.dgvCondition = new System.Windows.Forms.DataGridView();
+            this.tbConditionDetail = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.tbTenDieuKien = new System.Windows.Forms.TextBox();
+            this.tbConditionName = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.timerConfiguration = new System.Windows.Forms.Timer(this.components);
             this.tbMenu.SuspendLayout();
             this.tPTongQuat.SuspendLayout();
             this.tPThietLap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCapture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgChipData)).BeginInit();
             this.tPDieuKien.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDieuKien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCondition)).BeginInit();
             this.SuspendLayout();
             // 
             // tbMenu
@@ -118,19 +115,15 @@ namespace AutoBet.Application
             this.tPTongQuat.Controls.Add(this.label10);
             this.tPTongQuat.Controls.Add(this.richTextBox1);
             this.tPTongQuat.Controls.Add(this.tbSession);
-            this.tPTongQuat.Controls.Add(this.tbNgungKhiThuaTuWin);
             this.tPTongQuat.Controls.Add(this.tbNgungKhiThua);
             this.tPTongQuat.Controls.Add(this.txNgungKhiThang);
-            this.tPTongQuat.Controls.Add(this.tbSoVanToiDa);
             this.tPTongQuat.Controls.Add(this.tbCuocToiThieu);
             this.tPTongQuat.Controls.Add(this.cbDieuKien);
             this.tPTongQuat.Controls.Add(this.cbBan);
             this.tPTongQuat.Controls.Add(this.cbNhaCungCap);
             this.tPTongQuat.Controls.Add(this.label9);
-            this.tPTongQuat.Controls.Add(this.label8);
             this.tPTongQuat.Controls.Add(this.label7);
             this.tPTongQuat.Controls.Add(this.label6);
-            this.tPTongQuat.Controls.Add(this.label5);
             this.tPTongQuat.Controls.Add(this.label4);
             this.tPTongQuat.Controls.Add(this.label3);
             this.tPTongQuat.Controls.Add(this.label2);
@@ -174,7 +167,7 @@ namespace AutoBet.Application
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(344, 459);
+            this.btnExit.Location = new System.Drawing.Point(344, 398);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(119, 37);
             this.btnExit.TabIndex = 22;
@@ -183,7 +176,7 @@ namespace AutoBet.Application
             // 
             // btnTestAuto
             // 
-            this.btnTestAuto.Location = new System.Drawing.Point(184, 459);
+            this.btnTestAuto.Location = new System.Drawing.Point(190, 398);
             this.btnTestAuto.Name = "btnTestAuto";
             this.btnTestAuto.Size = new System.Drawing.Size(119, 37);
             this.btnTestAuto.TabIndex = 21;
@@ -192,7 +185,7 @@ namespace AutoBet.Application
             // 
             // btnBetAuto
             // 
-            this.btnBetAuto.Location = new System.Drawing.Point(25, 459);
+            this.btnBetAuto.Location = new System.Drawing.Point(25, 398);
             this.btnBetAuto.Name = "btnBetAuto";
             this.btnBetAuto.Size = new System.Drawing.Size(119, 37);
             this.btnBetAuto.TabIndex = 20;
@@ -219,38 +212,24 @@ namespace AutoBet.Application
             // 
             // tbSession
             // 
-            this.tbSession.Location = new System.Drawing.Point(264, 413);
+            this.tbSession.Location = new System.Drawing.Point(264, 333);
             this.tbSession.Name = "tbSession";
             this.tbSession.Size = new System.Drawing.Size(100, 22);
             this.tbSession.TabIndex = 17;
             // 
-            // tbNgungKhiThuaTuWin
-            // 
-            this.tbNgungKhiThuaTuWin.Location = new System.Drawing.Point(264, 367);
-            this.tbNgungKhiThuaTuWin.Name = "tbNgungKhiThuaTuWin";
-            this.tbNgungKhiThuaTuWin.Size = new System.Drawing.Size(100, 22);
-            this.tbNgungKhiThuaTuWin.TabIndex = 16;
-            // 
             // tbNgungKhiThua
             // 
-            this.tbNgungKhiThua.Location = new System.Drawing.Point(264, 317);
+            this.tbNgungKhiThua.Location = new System.Drawing.Point(264, 275);
             this.tbNgungKhiThua.Name = "tbNgungKhiThua";
             this.tbNgungKhiThua.Size = new System.Drawing.Size(100, 22);
             this.tbNgungKhiThua.TabIndex = 15;
             // 
             // txNgungKhiThang
             // 
-            this.txNgungKhiThang.Location = new System.Drawing.Point(264, 267);
+            this.txNgungKhiThang.Location = new System.Drawing.Point(264, 225);
             this.txNgungKhiThang.Name = "txNgungKhiThang";
             this.txNgungKhiThang.Size = new System.Drawing.Size(100, 22);
             this.txNgungKhiThang.TabIndex = 14;
-            // 
-            // tbSoVanToiDa
-            // 
-            this.tbSoVanToiDa.Location = new System.Drawing.Point(264, 222);
-            this.tbSoVanToiDa.Name = "tbSoVanToiDa";
-            this.tbSoVanToiDa.Size = new System.Drawing.Size(100, 22);
-            this.tbSoVanToiDa.TabIndex = 13;
             // 
             // tbCuocToiThieu
             // 
@@ -286,47 +265,29 @@ namespace AutoBet.Application
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(22, 413);
+            this.label9.Location = new System.Drawing.Point(22, 333);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(139, 17);
             this.label9.TabIndex = 8;
             this.label9.Text = "Số ván giữ SESSION";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(22, 367);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(175, 17);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Ngưng khi thua từ đỉnh win";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 317);
+            this.label7.Location = new System.Drawing.Point(22, 275);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 17);
+            this.label7.Size = new System.Drawing.Size(126, 17);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Ngưng khi thua";
+            this.label7.Text = "Tạm dừng khi thua";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 267);
+            this.label6.Location = new System.Drawing.Point(22, 225);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 17);
+            this.label6.Size = new System.Drawing.Size(134, 17);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Ngưng khi thắng";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 222);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(235, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Số ván chơi tối đa trên một shoe bài";
+            this.label6.Text = "Tạm dừng khi thắng";
             // 
             // label4
             // 
@@ -366,23 +327,22 @@ namespace AutoBet.Application
             // 
             // tPThietLap
             // 
-            this.tPThietLap.Controls.Add(this.btnGhiHinh);
-            this.tPThietLap.Controls.Add(this.pictureBox1);
-            this.tPThietLap.Controls.Add(this.listBox1);
-            this.tPThietLap.Controls.Add(this.btnSetPosition);
-            this.tPThietLap.Controls.Add(this.textBox4);
-            this.tPThietLap.Controls.Add(this.textBox3);
-            this.tPThietLap.Controls.Add(this.textBox2);
-            this.tPThietLap.Controls.Add(this.textBox1);
-            this.tPThietLap.Controls.Add(this.comboBox1);
-            this.tPThietLap.Controls.Add(this.btnXoa);
-            this.tPThietLap.Controls.Add(this.btnLuu);
-            this.tPThietLap.Controls.Add(this.btnUpdate);
             this.tPThietLap.Controls.Add(this.label17);
+            this.tPThietLap.Controls.Add(this.tbFolderPath);
+            this.tPThietLap.Controls.Add(this.btnConfigurationCheck);
+            this.tPThietLap.Controls.Add(this.cbChipType);
+            this.tPThietLap.Controls.Add(this.btnConfigurationSearch);
             this.tPThietLap.Controls.Add(this.label16);
+            this.tPThietLap.Controls.Add(this.pbCapture);
+            this.tPThietLap.Controls.Add(this.btnConfigurationRecord);
+            this.tPThietLap.Controls.Add(this.tbTableName);
+            this.tPThietLap.Controls.Add(this.cbProvider);
+            this.tPThietLap.Controls.Add(this.btnConfigurationRemove);
+            this.tPThietLap.Controls.Add(this.btnConfigurationSave);
+            this.tPThietLap.Controls.Add(this.btnConfigurationUpdate);
             this.tPThietLap.Controls.Add(this.label15);
             this.tPThietLap.Controls.Add(this.label14);
-            this.tPThietLap.Controls.Add(this.dataGridView1);
+            this.tPThietLap.Controls.Add(this.dgChipData);
             this.tPThietLap.Location = new System.Drawing.Point(4, 25);
             this.tPThietLap.Name = "tPThietLap";
             this.tPThietLap.Padding = new System.Windows.Forms.Padding(3);
@@ -391,160 +351,162 @@ namespace AutoBet.Application
             this.tPThietLap.Text = "Thiết Lập";
             this.tPThietLap.UseVisualStyleBackColor = true;
             // 
-            // btnGhiHinh
-            // 
-            this.btnGhiHinh.Location = new System.Drawing.Point(762, 214);
-            this.btnGhiHinh.Name = "btnGhiHinh";
-            this.btnGhiHinh.Size = new System.Drawing.Size(111, 38);
-            this.btnGhiHinh.TabIndex = 16;
-            this.btnGhiHinh.Text = "Ghi hình";
-            this.btnGhiHinh.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(679, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(194, 156);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(446, 29);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(206, 228);
-            this.listBox1.TabIndex = 14;
-            // 
-            // btnSetPosition
-            // 
-            this.btnSetPosition.Location = new System.Drawing.Point(324, 163);
-            this.btnSetPosition.Name = "btnSetPosition";
-            this.btnSetPosition.Size = new System.Drawing.Size(51, 22);
-            this.btnSetPosition.TabIndex = 13;
-            this.btnSetPosition.Text = "Set";
-            this.btnSetPosition.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSetPosition.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(256, 163);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(45, 22);
-            this.textBox4.TabIndex = 12;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(180, 163);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(45, 22);
-            this.textBox3.TabIndex = 11;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(180, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 22);
-            this.textBox2.TabIndex = 10;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(180, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 22);
-            this.textBox1.TabIndex = 9;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(180, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 24);
-            this.comboBox1.TabIndex = 8;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(265, 213);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(110, 39);
-            this.btnXoa.TabIndex = 7;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(139, 213);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(110, 39);
-            this.btnLuu.TabIndex = 6;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(11, 213);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(110, 39);
-            this.btnUpdate.TabIndex = 5;
-            this.btnUpdate.Text = "Sửa";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(7, 168);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(548, 25);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(58, 17);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "Set size";
+            this.label17.Size = new System.Drawing.Size(89, 20);
+            this.label17.TabIndex = 23;
+            this.label17.Text = "Đường dẫn";
+            // 
+            // tbFolderPath
+            // 
+            this.tbFolderPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFolderPath.Location = new System.Drawing.Point(652, 25);
+            this.tbFolderPath.Multiline = true;
+            this.tbFolderPath.Name = "tbFolderPath";
+            this.tbFolderPath.Size = new System.Drawing.Size(210, 28);
+            this.tbFolderPath.TabIndex = 22;
+            // 
+            // btnConfigurationCheck
+            // 
+            this.btnConfigurationCheck.Location = new System.Drawing.Point(751, 193);
+            this.btnConfigurationCheck.Name = "btnConfigurationCheck";
+            this.btnConfigurationCheck.Size = new System.Drawing.Size(111, 38);
+            this.btnConfigurationCheck.TabIndex = 21;
+            this.btnConfigurationCheck.Text = "Kiểm tra";
+            this.btnConfigurationCheck.UseVisualStyleBackColor = true;
+            // 
+            // cbChipType
+            // 
+            this.cbChipType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbChipType.FormattingEnabled = true;
+            this.cbChipType.Location = new System.Drawing.Point(246, 126);
+            this.cbChipType.Name = "cbChipType";
+            this.cbChipType.Size = new System.Drawing.Size(255, 26);
+            this.cbChipType.TabIndex = 20;
+            // 
+            // btnConfigurationSearch
+            // 
+            this.btnConfigurationSearch.Location = new System.Drawing.Point(12, 193);
+            this.btnConfigurationSearch.Name = "btnConfigurationSearch";
+            this.btnConfigurationSearch.Size = new System.Drawing.Size(110, 39);
+            this.btnConfigurationSearch.TabIndex = 19;
+            this.btnConfigurationSearch.Text = "Tìm kiếm";
+            this.btnConfigurationSearch.UseVisualStyleBackColor = true;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(8, 119);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(8, 126);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(35, 17);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "Title";
+            this.label16.Size = new System.Drawing.Size(146, 20);
+            this.label16.TabIndex = 18;
+            this.label16.Text = "Lựa chọn hình ảnh";
+            // 
+            // pbCapture
+            // 
+            this.pbCapture.Location = new System.Drawing.Point(552, 86);
+            this.pbCapture.Name = "pbCapture";
+            this.pbCapture.Size = new System.Drawing.Size(143, 146);
+            this.pbCapture.TabIndex = 17;
+            this.pbCapture.TabStop = false;
+            // 
+            // btnConfigurationRecord
+            // 
+            this.btnConfigurationRecord.Location = new System.Drawing.Point(751, 86);
+            this.btnConfigurationRecord.Name = "btnConfigurationRecord";
+            this.btnConfigurationRecord.Size = new System.Drawing.Size(111, 38);
+            this.btnConfigurationRecord.TabIndex = 16;
+            this.btnConfigurationRecord.Text = "Ghi hình";
+            this.btnConfigurationRecord.UseVisualStyleBackColor = true;
+            // 
+            // tbTableName
+            // 
+            this.tbTableName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTableName.Location = new System.Drawing.Point(246, 76);
+            this.tbTableName.Name = "tbTableName";
+            this.tbTableName.Size = new System.Drawing.Size(255, 24);
+            this.tbTableName.TabIndex = 9;
+            // 
+            // cbProvider
+            // 
+            this.cbProvider.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbProvider.FormattingEnabled = true;
+            this.cbProvider.Location = new System.Drawing.Point(246, 27);
+            this.cbProvider.Name = "cbProvider";
+            this.cbProvider.Size = new System.Drawing.Size(255, 26);
+            this.cbProvider.TabIndex = 8;
+            // 
+            // btnConfigurationRemove
+            // 
+            this.btnConfigurationRemove.Location = new System.Drawing.Point(391, 193);
+            this.btnConfigurationRemove.Name = "btnConfigurationRemove";
+            this.btnConfigurationRemove.Size = new System.Drawing.Size(110, 39);
+            this.btnConfigurationRemove.TabIndex = 7;
+            this.btnConfigurationRemove.Text = "Xóa";
+            this.btnConfigurationRemove.UseVisualStyleBackColor = true;
+            // 
+            // btnConfigurationSave
+            // 
+            this.btnConfigurationSave.Location = new System.Drawing.Point(139, 193);
+            this.btnConfigurationSave.Name = "btnConfigurationSave";
+            this.btnConfigurationSave.Size = new System.Drawing.Size(110, 39);
+            this.btnConfigurationSave.TabIndex = 6;
+            this.btnConfigurationSave.Text = "Lưu";
+            this.btnConfigurationSave.UseVisualStyleBackColor = true;
+            // 
+            // btnConfigurationUpdate
+            // 
+            this.btnConfigurationUpdate.Location = new System.Drawing.Point(264, 193);
+            this.btnConfigurationUpdate.Name = "btnConfigurationUpdate";
+            this.btnConfigurationUpdate.Size = new System.Drawing.Size(110, 39);
+            this.btnConfigurationUpdate.TabIndex = 5;
+            this.btnConfigurationUpdate.Text = "Sửa";
+            this.btnConfigurationUpdate.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(7, 76);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(62, 17);
+            this.label15.Size = new System.Drawing.Size(72, 20);
             this.label15.TabIndex = 2;
             this.label15.Text = "Tên Bàn";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(8, 29);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(157, 17);
+            this.label14.Size = new System.Drawing.Size(183, 20);
             this.label14.TabIndex = 1;
             this.label14.Text = "Lựa chọn nhà cung cấp";
             // 
-            // dataGridView1
+            // dgChipData
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 281);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(929, 231);
-            this.dataGridView1.TabIndex = 0;
+            this.dgChipData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgChipData.Location = new System.Drawing.Point(8, 270);
+            this.dgChipData.Name = "dgChipData";
+            this.dgChipData.RowHeadersWidth = 51;
+            this.dgChipData.RowTemplate.Height = 24;
+            this.dgChipData.Size = new System.Drawing.Size(929, 242);
+            this.dgChipData.TabIndex = 0;
             // 
             // tPDieuKien
             // 
-            this.tPDieuKien.Controls.Add(this.btnXoaDK);
-            this.tPDieuKien.Controls.Add(this.btnLuuDK);
-            this.tPDieuKien.Controls.Add(this.btnSuaDieuKien);
-            this.tPDieuKien.Controls.Add(this.dgvDieuKien);
-            this.tPDieuKien.Controls.Add(this.tbNoiDung);
+            this.tPDieuKien.Controls.Add(this.btnConditionDelete);
+            this.tPDieuKien.Controls.Add(this.btnConditionSave);
+            this.tPDieuKien.Controls.Add(this.btnConditionUpdate);
+            this.tPDieuKien.Controls.Add(this.dgvCondition);
+            this.tPDieuKien.Controls.Add(this.tbConditionDetail);
             this.tPDieuKien.Controls.Add(this.label19);
-            this.tPDieuKien.Controls.Add(this.tbTenDieuKien);
+            this.tPDieuKien.Controls.Add(this.tbConditionName);
             this.tPDieuKien.Controls.Add(this.label18);
             this.tPDieuKien.Location = new System.Drawing.Point(4, 25);
             this.tPDieuKien.Name = "tPDieuKien";
@@ -554,51 +516,51 @@ namespace AutoBet.Application
             this.tPDieuKien.Text = "Điều kiện";
             this.tPDieuKien.UseVisualStyleBackColor = true;
             // 
-            // btnXoaDK
+            // btnConditionDelete
             // 
-            this.btnXoaDK.Location = new System.Drawing.Point(322, 179);
-            this.btnXoaDK.Name = "btnXoaDK";
-            this.btnXoaDK.Size = new System.Drawing.Size(113, 36);
-            this.btnXoaDK.TabIndex = 7;
-            this.btnXoaDK.Text = "Xóa";
-            this.btnXoaDK.UseVisualStyleBackColor = true;
+            this.btnConditionDelete.Location = new System.Drawing.Point(322, 179);
+            this.btnConditionDelete.Name = "btnConditionDelete";
+            this.btnConditionDelete.Size = new System.Drawing.Size(113, 36);
+            this.btnConditionDelete.TabIndex = 7;
+            this.btnConditionDelete.Text = "Xóa";
+            this.btnConditionDelete.UseVisualStyleBackColor = true;
             // 
-            // btnLuuDK
+            // btnConditionSave
             // 
-            this.btnLuuDK.Location = new System.Drawing.Point(174, 179);
-            this.btnLuuDK.Name = "btnLuuDK";
-            this.btnLuuDK.Size = new System.Drawing.Size(113, 36);
-            this.btnLuuDK.TabIndex = 6;
-            this.btnLuuDK.Text = "Lưu";
-            this.btnLuuDK.UseVisualStyleBackColor = true;
+            this.btnConditionSave.Location = new System.Drawing.Point(174, 179);
+            this.btnConditionSave.Name = "btnConditionSave";
+            this.btnConditionSave.Size = new System.Drawing.Size(113, 36);
+            this.btnConditionSave.TabIndex = 6;
+            this.btnConditionSave.Text = "Lưu";
+            this.btnConditionSave.UseVisualStyleBackColor = true;
             // 
-            // btnSuaDieuKien
+            // btnConditionUpdate
             // 
-            this.btnSuaDieuKien.Location = new System.Drawing.Point(30, 179);
-            this.btnSuaDieuKien.Name = "btnSuaDieuKien";
-            this.btnSuaDieuKien.Size = new System.Drawing.Size(113, 36);
-            this.btnSuaDieuKien.TabIndex = 5;
-            this.btnSuaDieuKien.Text = "Sửa";
-            this.btnSuaDieuKien.UseVisualStyleBackColor = true;
+            this.btnConditionUpdate.Location = new System.Drawing.Point(30, 179);
+            this.btnConditionUpdate.Name = "btnConditionUpdate";
+            this.btnConditionUpdate.Size = new System.Drawing.Size(113, 36);
+            this.btnConditionUpdate.TabIndex = 5;
+            this.btnConditionUpdate.Text = "Sửa";
+            this.btnConditionUpdate.UseVisualStyleBackColor = true;
             // 
-            // dgvDieuKien
+            // dgvCondition
             // 
-            this.dgvDieuKien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDieuKien.Location = new System.Drawing.Point(30, 235);
-            this.dgvDieuKien.Name = "dgvDieuKien";
-            this.dgvDieuKien.RowHeadersWidth = 51;
-            this.dgvDieuKien.RowTemplate.Height = 24;
-            this.dgvDieuKien.Size = new System.Drawing.Size(861, 260);
-            this.dgvDieuKien.TabIndex = 4;
+            this.dgvCondition.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCondition.Location = new System.Drawing.Point(30, 235);
+            this.dgvCondition.Name = "dgvCondition";
+            this.dgvCondition.RowHeadersWidth = 51;
+            this.dgvCondition.RowTemplate.Height = 24;
+            this.dgvCondition.Size = new System.Drawing.Size(861, 260);
+            this.dgvCondition.TabIndex = 4;
             // 
-            // tbNoiDung
+            // tbConditionDetail
             // 
-            this.tbNoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNoiDung.Location = new System.Drawing.Point(30, 133);
-            this.tbNoiDung.Multiline = true;
-            this.tbNoiDung.Name = "tbNoiDung";
-            this.tbNoiDung.Size = new System.Drawing.Size(861, 27);
-            this.tbNoiDung.TabIndex = 3;
+            this.tbConditionDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbConditionDetail.Location = new System.Drawing.Point(30, 133);
+            this.tbConditionDetail.Multiline = true;
+            this.tbConditionDetail.Name = "tbConditionDetail";
+            this.tbConditionDetail.Size = new System.Drawing.Size(861, 27);
+            this.tbConditionDetail.TabIndex = 3;
             // 
             // label19
             // 
@@ -610,14 +572,14 @@ namespace AutoBet.Application
             this.label19.TabIndex = 2;
             this.label19.Text = "Nội dung điều kiện";
             // 
-            // tbTenDieuKien
+            // tbConditionName
             // 
-            this.tbTenDieuKien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTenDieuKien.Location = new System.Drawing.Point(30, 49);
-            this.tbTenDieuKien.Multiline = true;
-            this.tbTenDieuKien.Name = "tbTenDieuKien";
-            this.tbTenDieuKien.Size = new System.Drawing.Size(226, 27);
-            this.tbTenDieuKien.TabIndex = 1;
+            this.tbConditionName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbConditionName.Location = new System.Drawing.Point(30, 49);
+            this.tbConditionName.Multiline = true;
+            this.tbConditionName.Name = "tbConditionName";
+            this.tbConditionName.Size = new System.Drawing.Size(226, 27);
+            this.tbConditionName.TabIndex = 1;
             // 
             // label18
             // 
@@ -636,6 +598,7 @@ namespace AutoBet.Application
             this.ClientSize = new System.Drawing.Size(955, 558);
             this.Controls.Add(this.tbMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "formAutoBet";
             this.Text = "AUTO BET";
             this.tbMenu.ResumeLayout(false);
@@ -643,11 +606,11 @@ namespace AutoBet.Application
             this.tPTongQuat.PerformLayout();
             this.tPThietLap.ResumeLayout(false);
             this.tPThietLap.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCapture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgChipData)).EndInit();
             this.tPDieuKien.ResumeLayout(false);
             this.tPDieuKien.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDieuKien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCondition)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -657,10 +620,8 @@ namespace AutoBet.Application
         private System.Windows.Forms.TabControl tbMenu;
         private System.Windows.Forms.TabPage tPTongQuat;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -676,39 +637,37 @@ namespace AutoBet.Application
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox tbSession;
-        private System.Windows.Forms.TextBox tbNgungKhiThuaTuWin;
         private System.Windows.Forms.TextBox tbNgungKhiThua;
         private System.Windows.Forms.TextBox txNgungKhiThang;
-        private System.Windows.Forms.TextBox tbSoVanToiDa;
         private System.Windows.Forms.TextBox tbCuocToiThieu;
         private System.Windows.Forms.ComboBox cbDieuKien;
         private System.Windows.Forms.ComboBox cbBan;
         private System.Windows.Forms.ComboBox cbNhaCungCap;
-        private System.Windows.Forms.Button btnGhiHinh;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button btnSetPosition;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnConfigurationRecord;
+        private System.Windows.Forms.TextBox tbTableName;
+        private System.Windows.Forms.ComboBox cbProvider;
+        private System.Windows.Forms.Button btnConfigurationRemove;
+        private System.Windows.Forms.Button btnConfigurationSave;
+        private System.Windows.Forms.Button btnConfigurationUpdate;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnXoaDK;
-        private System.Windows.Forms.Button btnLuuDK;
-        private System.Windows.Forms.Button btnSuaDieuKien;
-        private System.Windows.Forms.DataGridView dgvDieuKien;
-        private System.Windows.Forms.TextBox tbNoiDung;
+        private System.Windows.Forms.DataGridView dgChipData;
+        private System.Windows.Forms.Button btnConditionDelete;
+        private System.Windows.Forms.Button btnConditionSave;
+        private System.Windows.Forms.Button btnConditionUpdate;
+        private System.Windows.Forms.DataGridView dgvCondition;
+        private System.Windows.Forms.TextBox tbConditionDetail;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox tbTenDieuKien;
+        private System.Windows.Forms.TextBox tbConditionName;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button btnConfigurationCheck;
+        private System.Windows.Forms.ComboBox cbChipType;
+        private System.Windows.Forms.Button btnConfigurationSearch;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pbCapture;
+        private System.Windows.Forms.Timer timerConfiguration;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox tbFolderPath;
     }
 }
 
